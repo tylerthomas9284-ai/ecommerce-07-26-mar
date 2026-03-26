@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout — Lumora Home</title>
+  <meta name="description" content="Secure checkout with Cash on Delivery. Review your order and place it safely." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="main-nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">Lumora<span>Home</span></a>
+    <div class="nav__links">
+      <a href="index.html">Shop</a>
+    </div>
+    <div class="nav__right">
+      <a href="checkout.html" class="nav__cart-btn active">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        Cart <span class="cart-badge"></span>
+      </a>
+    </div>
+    <button class="nav__burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile">
+    <a href="index.html">Shop</a>
+    <a href="checkout.html">Cart</a>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="inner-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> <span>&rsaquo;</span> <strong>Checkout</strong>
+    </div>
+    <h1 style="margin-top:0.75rem;">Secure Checkout</h1>
+    <p>Review your order and complete your delivery details below.</p>
+  </div>
+</div>
+
+<!-- CHECKOUT LAYOUT -->
+<div class="container">
+  <div class="checkout-layout">
+
+    <!-- LEFT: ORDER SUMMARY -->
+    <div>
+      <div class="order-summary fade-up">
+        <div class="order-summary__title">Your Order</div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="empty-cart" id="empty-cart" style="display:none;">
+          <p>Your cart is empty.</p>
+          <a href="index.html" class="btn btn--primary">Continue Shopping</a>
+        </div>
+        <div class="order-totals">
+          <div class="order-totals__row">
+            <span>Subtotal</span>
+            <span id="order-subtotal">$0.00</span>
+          </div>
+          <div class="order-totals__row">
+            <span>Shipping</span>
+            <span id="order-shipping">Free</span>
+          </div>
+          <div class="order-totals__row total">
+            <span>Total</span>
+            <span id="order-total">$0.00</span>
+          </div>
+        </div>
+        <div class="cod-badge">
+          <strong>Cash on Delivery</strong> — No payment needed now. Pay the delivery person when your order arrives at your door.
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHECKOUT FORM -->
+    <div id="checkout-form-wrap" class="fade-up">
+      <div class="checkout-form-wrap">
+        <h2>Delivery Details</h2>
+        <p class="subtitle">All fields marked <span style="color:var(--terra)">*</span> are required.</p>
+
+        <form id="checkout-form" novalidate>
+
+          <!-- Contact Info -->
+          <div class="form-section-title">Contact Information</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullname">Full Name <span>*</span></label>
+              <input type="text" id="fullname" name="fullname" placeholder="Jane Smith" required autocomplete="name" />
+              <span class="error-msg">Please enter your full name.</span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span>*</span></label>
+              <input type="email" id="email" name="email" placeholder="jane@email.com" required autocomplete="email" />
+              <span class="error-msg">Please enter a valid email.</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number <span>*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required autocomplete="tel" />
+            <span class="error-msg">Please enter your phone number.</span>
+          </div>
+
+          <!-- Delivery Address -->
+          <div class="form-section-title">Delivery Address</div>
+          <div class="form-group">
+            <label for="address">Street Address <span>*</span></label>
+            <input type="text" id="address" name="address" placeholder="123 Main Street" required autocomplete="street-address" />
+            <span class="error-msg">Please enter your street address.</span>
+          </div>
+          <div class="form-group">
+            <label for="apt">Apartment / Suite / Unit (optional)</label>
+            <input type="text" id="apt" name="apt" placeholder="Apt 4B" autocomplete="address-line2" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="city">City <span>*</span></label>
+              <input type="text" id="city" name="city" placeholder="San Francisco" required autocomplete="address-level2" />
+              <span class="error-msg">Please enter your city.</span>
+            </div>
+            <div class="form-group">
+              <label for="state">State <span>*</span></label>
+              <select id="state" name="state" required autocomplete="address-level1">
+                <option value="">Select state…</option>
+                <option>AL</option><option>AK</option><option>AZ</option><option>AR</option>
+                <option>CA</option><option>CO</option><option>CT</option><option>DE</option>
+                <option>FL</option><option>GA</option><option>HI</option><option>ID</option>
+                <option>IL</option><option>IN</option><option>IA</option><option>KS</option>
+                <option>KY</option><option>LA</option><option>ME</option><option>MD</option>
+                <option>MA</option><option>MI</option><option>MN</option><option>MS</option>
+                <option>MO</option><option>MT</option><option>NE</option><option>NV</option>
+                <option>NH</option><option>NJ</option><option>NM</option><option>NY</option>
+                <option>NC</option><option>ND</option><option>OH</option><option>OK</option>
+                <option>OR</option><option>PA</option><option>RI</option><option>SC</option>
+                <option>SD</option><option>TN</option><option>TX</option><option>UT</option>
+                <option>VT</option><option>VA</option><option>WA</option><option>WV</option>
+                <option>WI</option><option>WY</option>
+              </select>
+              <span class="error-msg">Please select your state.</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="zip">ZIP Code <span>*</span></label>
+            <input type="text" id="zip" name="zip" placeholder="94102" required autocomplete="postal-code" maxlength="10" />
+            <span class="error-msg">Please enter your ZIP code.</span>
+          </div>
+
+          <!-- Order Notes -->
+          <div class="form-section-title">Additional Notes</div>
+          <div class="form-group">
+            <label for="notes">Delivery Instructions (optional)</label>
+            <textarea id="notes" name="notes" placeholder="E.g. Leave at front door, ring doorbell, etc."></textarea>
+          </div>
+
+          <!-- Payment Method -->
+          <div class="form-section-title">Payment Method</div>
+          <div class="payment-method">
+            <div class="payment-method__label">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              Cash on Delivery (COD)
+            </div>
+            <p>Pay with cash when your order is delivered to your door. No card or digital payment required. Our delivery partner will collect payment upon arrival.</p>
+          </div>
+
+          <!-- Consent -->
+          <label class="consent-check">
+            <input type="checkbox" name="consent" required />
+            I agree to the <a href="terms-conditions.html" target="_blank">Terms &amp; Conditions</a> and <a href="privacy-policy.html" target="_blank">Privacy Policy</a> of Lumora Home. I understand that my order will be delivered via Cash on Delivery.
+          </label>
+
+          <button type="submit" class="place-order-btn" id="place-order-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            Place Order — Pay on Delivery
+          </button>
+          <p class="secure-note">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            Your personal information is kept secure and private.
+          </p>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ORDER SUCCESS MODAL -->
+<div class="modal-overlay" id="order-modal">
+  <div class="modal">
+    <div class="modal__icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <h2>Order Placed!</h2>
+    <p>Thank you for your order. We will contact you within 24 hours to confirm your delivery time.</p>
+    <div class="modal__order-num">
+      <small>Order Number</small>
+      <span id="order-number-display">LH-0000</span>
+    </div>
+    <div class="modal__details">
+      <strong>Customer:</strong> <span id="modal-name"></span><br />
+      <strong>Delivery to:</strong> <span id="modal-address"></span><br />
+      <strong>Payment:</strong> Cash on Delivery<br />
+      <strong>Estimated Delivery:</strong> 3–5 Business Days
+    </div>
+    <button class="modal__close" id="modal-close-btn">Back to Shop</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__bottom" style="justify-content:center; gap:2rem;">
+      <a href="index.html">&larr; Continue Shopping</a>
+      <span>&copy; 2025 Lumora Home</span>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE CONSENT -->
+<div class="cookie-banner" id="cookie-banner">
+  <p>We use cookies to improve your experience. See our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+  <div class="cookie-banner__actions">
+    <button class="cookie-accept">Accept</button>
+    <button class="cookie-decline">Decline</button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

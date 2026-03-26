@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumora Home — Crafted for Slow Living</title>
+  <meta name="description" content="Handcrafted home essentials curated for slow, intentional living. Candles, ceramics, textiles and more — all made with care." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="main-nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">Lumora<span>Home</span></a>
+    <div class="nav__links">
+      <a href="index.html" class="active">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav__right">
+      <a href="checkout.html" class="nav__cart-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        Cart <span class="cart-badge" id="cart-count"></span>
+      </a>
+    </div>
+    <button class="nav__burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile">
+    <a href="index.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="checkout.html">Cart (<span class="cart-badge"></span>)</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__content fade-up">
+    <span class="hero__eyebrow">Handcrafted Home Essentials</span>
+    <h1 class="hero__title">Crafted for<br><em>Slow Living.</em></h1>
+    <p class="hero__desc">Beautifully made objects for the home — woven, thrown, poured, and carved by artisans who care about the details as much as you do.</p>
+    <div class="hero__actions">
+      <a href="#products" class="btn btn--primary">Shop All Products</a>
+      <a href="#features" class="btn btn--outline">Our Story</a>
+    </div>
+  </div>
+  <div class="hero__image">
+    <img src="https://images.unsplash.com/photo-1650091507687-5ea34d80e674?w=900&q=85&fit=crop" alt="Cozy home interior with handcrafted decor" loading="eager" />
+    <div class="hero__badge">
+      <span class="hero__badge-num">10+</span>
+      <span class="hero__badge-text">Artisan Collections</span>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar__inner">
+    <div class="trust-bar__item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      Free Shipping on Orders Over $75
+    </div>
+    <div class="trust-bar__item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
+      30-Day Easy Returns
+    </div>
+    <div class="trust-bar__item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      100% Handcrafted
+    </div>
+    <div class="trust-bar__item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      Cash on Delivery Available
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTS GRID -->
+<section class="section products-section" id="products">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-eyebrow">Our Collections</span>
+      <h2 class="section-title">Shop All Products</h2>
+      <p class="section-desc">Each piece is made in small batches by skilled artisans — no two are exactly alike.</p>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Product 1: Cedarwood Candle -->
+      <div class="product-card fade-up">
+        <div class="product-card__img">
+          <img src="https://images.unsplash.com/photo-1602607202436-d1b8db3b7b32?w=480&q=85&fit=crop" alt="Cedarwood and Amber Candle" loading="lazy" />
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Candles</div>
+          <div class="product-card__name">Cedarwood &amp; Amber Candle</div>
+          <div class="product-card__price">$24.00</div>
+          <div class="product-card__actions">
+            <button class="btn btn--primary btn--sm" data-add-to-cart="cedarwood-candle">Add to Cart</button>
+            <a href="product-cedarwood-candle.html" class="btn btn--outline btn--sm">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2: Knit Throw Blanket -->
+      <div class="product-card fade-up">
+        <div class="product-card__img">
+          <img src="https://images.unsplash.com/photo-1674475760738-8c7af859f821?w=480&q=85&fit=crop" alt="Chunky Knit Throw Blanket" loading="lazy" />
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Textiles</div>
+          <div class="product-card__name">Chunky Knit Throw Blanket</div>
+          <div class="product-card__price">$68.00</div>
+          <div class="product-card__actions">
+            <button class="btn btn--primary btn--sm" data-add-to-cart="knit-throw-blanket">Add to Cart</button>
+            <a href="product-knit-throw-blanket.html" class="btn btn--outline btn--sm">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3: Ceramic Mug -->
+      <div class="product-card fade-up">
+        <div class="product-card__img">
+          <span class="product-card__badge">Bestseller</span>
+          <img src="https://images.unsplash.com/photo-1657395348189-a19abe13fb1e?w=480&q=85&fit=crop" alt="Handmade Ceramic Mug" loading="lazy" />
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Ceramics</div>
+          <div class="product-card__name">Handmade Ceramic Mug</div>
+          <div class="product-card__price">$22.00</div>
+          <div class="product-card__actions">
+            <button class="btn btn--primary btn--sm" data-add-to-cart="ceramic-mug">Add to Cart</button>
+            <a href="product-ceramic-mug.html" class="btn btn--outline btn--sm">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4: Storage Basket -->
+      <div class="product-card fade-up">
+        <div class="product-card__img">
+          <img src="https://images.unsplash.com/photo-1668783071383-43f4602af5cb?w=480&q=85&fit=crop" alt="Seagrass Storage Basket" loading="lazy" />
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Storage</div>
+          <div class="product-card__name">Seagrass Storage Basket</div>
+          <div class="product-card__price">$48.00</div>
+          <div class="product-card__actions">
+            <button class="btn btn--primary btn--sm" data-add-to-cart="storage-basket">Add to Cart</button>
+            <a href="product-storage-basket.html" class="btn btn--outline btn--sm">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5: Reed Diffuser -->
+      <div class="product-card fade-up">
+        <div class="product-card__img">
+          <img src="https://images.unsplash.com/photo-1590595536952-b41d04eb7b08?w=480&q=85&fit=crop" alt="Bamboo Reed Diffuser" loading="lazy" />
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Aromatherapy</div>
+          <div class="product-card__name">Bamboo Reed Diffuser</div>
+          <div class="product-card__price">$36.00</div>
+          <div class="product-card__actions">
+            <button class="btn btn--primary btn--sm" data-add-to-cart="reed-diffuser">Add to Cart</button>
+            <a href="product-reed-diffuser.html" class="btn btn--outline btn--sm">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6: Wall Clock -->
+      <div class="product-card fade-up">
+        <div class="product-card__img">
+          <span class="product-card__badge">New</span>
+          <img src="https://images.unsplash.com/photo-1645241910531-d32735b412a2?w=480&q=85&fit=crop" alt="Oak and Brass Wall Clock" loading="lazy" />
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Home Decor</div>
+          <div class="product-card__name">Oak &amp; Brass Wall Clock</div>
+          <div class="product-card__price">$74.00</div>
+          <div class="product-card__actions">
+            <button class="btn btn--primary btn--sm" data-add-to-cart="wall-clock">Add to Cart</button>
+            <a href="product-wall-clock.html" class="btn btn--outline btn--sm">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 7: Wool Rug -->
+      <div class="product-card fade-up">
+        <div class="product-card__img">
+          <img src="https://images.unsplash.com/photo-1629949009765-40fc74c9ec21?w=480&q=85&fit=crop" alt="Hand-Loomed Wool Rug" loading="lazy" />
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Rugs</div>
+          <div class="product-card__name">Hand-Loomed Wool Rug</div>
+          <div class="product-card__price">$128.00</div>
+          <div class="product-card__actions">
+            <button class="btn btn--primary btn--sm" data-add-to-cart="wool-rug">Add to Cart</button>
+            <a href="product-wool-rug.html" class="btn btn--outline btn--sm">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 8: Serving Board -->
+      <div class="product-card fade-up">
+        <div class="product-card__img">
+          <img src="https://images.unsplash.com/photo-1660002561318-6ef0a0ae1f04?w=480&q=85&fit=crop" alt="Acacia Serving Board" loading="lazy" />
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Kitchen</div>
+          <div class="product-card__name">Acacia Serving Board</div>
+          <div class="product-card__price">$38.00</div>
+          <div class="product-card__actions">
+            <button class="btn btn--primary btn--sm" data-add-to-cart="serving-board">Add to Cart</button>
+            <a href="product-serving-board.html" class="btn btn--outline btn--sm">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 9: Towel Set -->
+      <div class="product-card fade-up">
+        <div class="product-card__img">
+          <img src="https://images.unsplash.com/photo-1511401139252-f158d3209c17?w=480&q=85&fit=crop" alt="Honeycomb Towel Set" loading="lazy" />
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Textiles</div>
+          <div class="product-card__name">Honeycomb Towel Set</div>
+          <div class="product-card__price">$52.00</div>
+          <div class="product-card__actions">
+            <button class="btn btn--primary btn--sm" data-add-to-cart="towel-set">Add to Cart</button>
+            <a href="product-towel-set.html" class="btn btn--outline btn--sm">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 10: Botanical Prints -->
+      <div class="product-card fade-up">
+        <div class="product-card__img">
+          <img src="https://images.unsplash.com/photo-1704026438363-11504e77bfe7?w=480&q=85&fit=crop" alt="Botanical Print Set" loading="lazy" />
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__cat">Wall Art</div>
+          <div class="product-card__name">Botanical Print Set</div>
+          <div class="product-card__price">$32.00</div>
+          <div class="product-card__actions">
+            <button class="btn btn--primary btn--sm" data-add-to-cart="botanical-prints">Add to Cart</button>
+            <a href="product-botanical-prints.html" class="btn btn--outline btn--sm">View</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES STRIP -->
+<section class="features-strip" id="features">
+  <div class="container">
+    <div class="features-strip__grid">
+      <div class="feature-card fade-up">
+        <div class="feature-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h4>Small Batch Crafting</h4>
+        <p>Every product is made in small runs by independent artisans — never factory-produced at scale.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h4>Ethically Sourced</h4>
+        <p>We partner only with artisans who pay fair wages and use responsibly sourced natural materials.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h4>Made for Homes, with Love</h4>
+        <p>Curated for the home that values simplicity, warmth, and objects that tell a story.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section section" id="testimonials">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-eyebrow">Customer Stories</span>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-desc">From real homes across the country — stories from people who live with Lumora pieces every day.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <blockquote>"The Cedarwood candle has completely changed the atmosphere in my living room. It burns clean, the scent is subtle but present for hours, and the glass looks beautiful on my shelf."</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-author__avatar">A</div>
+          <div>
+            <div class="testimonial-author__name">Amara K.</div>
+            <div class="testimonial-author__location">Portland, OR</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <blockquote>"My ceramic mug is the first thing I reach for every morning. It feels different from anything I've bought before — you can feel it was made by a person, not a machine. Worth every penny."</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-author__avatar">J</div>
+          <div>
+            <div class="testimonial-author__name">James T.</div>
+            <div class="testimonial-author__location">Austin, TX</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <blockquote>"I bought the wool rug and seagrass basket together. They work so well together — my living room feels completely transformed. The delivery was fast and both arrived beautifully packaged."</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-author__avatar">S</div>
+          <div>
+            <div class="testimonial-author__name">Sofia R.</div>
+            <div class="testimonial-author__location">Brooklyn, NY</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter" id="newsletter">
+  <div class="container">
+    <div class="newsletter__inner fade-up">
+      <h2>Slow Down with Us</h2>
+      <p>Join our community for new arrivals, artisan stories, and care guides — no noise, just good things.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required autocomplete="email" />
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter__success">Thank you for subscribing! We will be in touch soon.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo">Lumora<span>Home</span></a>
+        <p>Handcrafted home essentials for those who believe the objects around you should mean something.</p>
+      </div>
+      <div class="footer__col">
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="index.html">All Products</a></li>
+          <li><a href="product-cedarwood-candle.html">Candles</a></li>
+          <li><a href="product-ceramic-mug.html">Ceramics</a></li>
+          <li><a href="product-knit-throw-blanket.html">Textiles</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Help</h5>
+        <ul>
+          <li><a href="checkout.html">Cart &amp; Checkout</a></li>
+          <li><a href="disclaimer.html">Shipping &amp; Returns</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2025 Lumora Home. All rights reserved.</span>
+      <span>hello@lumorahome.site &nbsp;|&nbsp; (866) 248-4100</span>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE CONSENT -->
+<div class="cookie-banner" id="cookie-banner">
+  <p>We use cookies to improve your browsing experience. By continuing, you agree to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+  <div class="cookie-banner__actions">
+    <button class="cookie-accept">Accept</button>
+    <button class="cookie-decline">Decline</button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

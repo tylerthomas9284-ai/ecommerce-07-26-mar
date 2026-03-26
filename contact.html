@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Lumora Home</title>
+  <meta name="description" content="Get in touch with Lumora Home. Questions about your order, a product, or just want to say hello — we'd love to hear from you." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<nav class="nav" id="main-nav"><div class="nav__inner"><a href="index.html" class="nav__logo">Lumora<span>Home</span></a><div class="nav__links"><a href="index.html">Shop</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a></div><div class="nav__right"><a href="checkout.html" class="nav__cart-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Cart <span class="cart-badge"></span></a></div><button class="nav__burger"><span></span><span></span><span></span></button></div><div class="nav__mobile"><a href="index.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="checkout.html">Cart</a></div></nav>
+
+<!-- CONTACT HERO -->
+<div class="contact-hero">
+  <div class="container">
+    <p class="about-hero__eyebrow">Get in Touch</p>
+    <h1>We'd Love to Hear from You</h1>
+    <p>Questions about your order, a product, or just want to say hello — our team responds within one business day.</p>
+  </div>
+</div>
+
+<!-- CONTACT LAYOUT -->
+<section class="section"><div class="container">
+  <div class="contact-layout">
+
+    <!-- INFO COLUMN -->
+    <div class="contact-info fade-up">
+      <h2>Contact Information</h2>
+
+      <div class="contact-info-item">
+        <div class="contact-info-item__icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div class="contact-info-item__text">
+          <strong>Email Us</strong>
+          <span><a href="mailto:hello@lumorahome.site">hello@lumorahome.site</a><br />We reply within 1 business day.</span>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-item__icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 012 2.24 2 2 0 014 .06h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 7a16 16 0 006.92 6.92l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <div class="contact-info-item__text">
+          <strong>Call Us</strong>
+          <span>(866) 248-4100<br />Mon–Fri, 9am–5pm PT</span>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-item__icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="contact-info-item__text">
+          <strong>Our Address</strong>
+          <span>847 Market Street, Suite 12<br />San Francisco, CA 94102</span>
+        </div>
+      </div>
+
+      <div class="contact-hours">
+        <h4>Customer Support Hours</h4>
+        <table>
+          <tr><td>Monday – Friday</td><td>9:00am – 5:00pm PT</td></tr>
+          <tr><td>Saturday</td><td>10:00am – 2:00pm PT</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- FORM COLUMN -->
+    <div class="contact-form-wrap fade-up">
+      <h2>Send Us a Message</h2>
+      <p>Fill in the form below and we'll get back to you as soon as possible.</p>
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="contact-name">Full Name <span style="color:var(--terra)">*</span></label>
+            <input type="text" id="contact-name" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email Address <span style="color:var(--terra)">*</span></label>
+            <input type="email" id="contact-email" placeholder="you@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contact-subject">Subject <span style="color:var(--terra)">*</span></label>
+          <select id="contact-subject" required>
+            <option value="">Select a topic…</option>
+            <option value="order">Order Status / Tracking</option>
+            <option value="return">Returns &amp; Exchanges</option>
+            <option value="product">Product Question</option>
+            <option value="wholesale">Wholesale Inquiry</option>
+            <option value="other">Something Else</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="contact-order">Order Number (optional)</label>
+          <input type="text" id="contact-order" placeholder="e.g. LH-1042" />
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message <span style="color:var(--terra)">*</span></label>
+          <textarea id="contact-message" rows="5" placeholder="Tell us how we can help…" required></textarea>
+        </div>
+        <button type="submit" class="contact-submit-btn">Send Message</button>
+        <div class="contact-success" id="contact-success">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin:0 auto 0.75rem;display:block;color:var(--sage)"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <strong>Message sent!</strong><br />Thank you for reaching out. We'll reply within 1 business day.
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div></section>
+
+<footer class="footer"><div class="container">
+  <div class="footer__main">
+    <div class="footer__brand">
+      <a href="index.html" class="nav__logo">Lumora<span>Home</span></a>
+      <p>Handcrafted home essentials for those who believe the objects around you should mean something.</p>
+    </div>
+    <div class="footer__col"><h5>Shop</h5><ul><li><a href="index.html">All Products</a></li><li><a href="product-cedarwood-candle.html">Candles</a></li><li><a href="product-ceramic-mug.html">Ceramics</a></li><li><a href="product-knit-throw-blanket.html">Textiles</a></li></ul></div>
+    <div class="footer__col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="checkout.html">Cart &amp; Checkout</a></li></ul></div>
+    <div class="footer__col"><h5>Legal</h5><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-conditions.html">Terms &amp; Conditions</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div>
+  </div>
+  <div class="footer__bottom"><span>&copy; 2025 Lumora Home. All rights reserved.</span><span>hello@lumorahome.site &nbsp;|&nbsp; (866) 248-4100</span><a href="privacy-policy.html">Privacy Policy</a></div>
+</div></footer>
+<div class="cookie-banner" id="cookie-banner"><p>We use cookies. See our <a href="privacy-policy.html">Privacy Policy</a>.</p><div class="cookie-banner__actions"><button class="cookie-accept">Accept</button><button class="cookie-decline">Decline</button></div></div>
+<script src="js/script.js"></script>
+<script>
+(function(){
+  var form = document.getElementById('contact-form');
+  var success = document.getElementById('contact-success');
+  if(!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('contact-name').value.trim();
+    var email = document.getElementById('contact-email').value.trim();
+    var subject = document.getElementById('contact-subject').value;
+    var message = document.getElementById('contact-message').value.trim();
+    if(!name || !email || !subject || !message){ return; }
+    form.querySelectorAll('input,select,textarea,button').forEach(function(el){ el.disabled = true; });
+    success.style.display = 'block';
+    form.querySelector('.contact-submit-btn').style.display = 'none';
+  });
+})();
+</script>
+</body></html>
